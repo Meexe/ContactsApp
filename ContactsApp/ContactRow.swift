@@ -17,7 +17,7 @@ struct ContactRow: View {
             Text(contact.givenName)
             Text(contact.familyName)
             Spacer()
-            Text(contact.phoneNumbers[0].value.stringValue)
+            Text(contact.phoneNumbers.isEmpty ? "No number": contact.phoneNumbers[0].value.stringValue)
         }
     }
 }
